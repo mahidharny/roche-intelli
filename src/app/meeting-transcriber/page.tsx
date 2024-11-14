@@ -130,7 +130,7 @@ export default function MeetingTranscriber() {
       <div
         className={`flex flex-col ${showSideMenu ? "w-2/3" : "w-[100%]"} pr-4`}
       >
-        <Card className="flex-grow mb-4">
+        <Card className="flex-grow mb-4 relative">
           <CardHeader>
             <CardTitle className="bg-[#304db3] text-white flex items-center">
               <div className="flex-col gap-4 items-center h-[100%] bg-white p-2">
@@ -243,11 +243,7 @@ export default function MeetingTranscriber() {
             </Dialog>
             <Button
               onClick={toggleSideMenu}
-              className={`absolute rounded-full w-[30px] h-[30px] ${
-                showSideMenu
-                  ? "top-[250px] right-[395px]"
-                  : "top-[250px] right-[15px]"
-              }`}
+              className={`absolute rounded-full w-[30px] h-[30px] top-[300px] right-[-20px]`}
             >
               {/* {showSideMenu ? <span>X</span> : <span>&#8801;</span>} */}
               {showSideMenu ? <ChevronRight /> : <ChevronLeft />}
